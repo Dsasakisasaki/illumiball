@@ -6,7 +6,8 @@ public class GravityController : MonoBehaviour
 {
     // 重力加速度
     const float Gravity = 9.81f;
-
+    
+    [SerializeField]//public の代わりに使う　こちらの方が良い　記述の一個下に適用される
     //重力の適用具合
     public float gravityScale = 1.0f;//bublic付けない場合はprivateになる(デフォルトがprivate)
     //publicで作ったものはunityのinspectorに出るのでそちらで調整できる
